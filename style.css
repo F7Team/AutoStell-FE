@@ -13,7 +13,6 @@
 .header {
     width: 100%;
     height: 100vh;
-    min-height: 700px;
     background-color: #d3d3d3;
     background-image: url(images/car-back.png);
     background-position: center;
