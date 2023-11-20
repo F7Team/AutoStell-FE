@@ -1,195 +1,99 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 
-}     /*----- Background Image -----*/
-
-.header{
-     width: 100%;
-     min-height: 100vh;
-     background-color: #d3d3d3;
-     background-image: url(images/image\ 2.png);
-     background-position: center;
-     background-size: 50% 350px;
-     background-repeat: no-repeat;
-     
-          
 }
-nav{
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    background-color: #d3d3d3;
+    background-image: url(images/car-back.png);
+    background-position: center;
+    background-size: 50% 350px;
+    background-repeat: no-repeat;
+    padding: 40px;
+    position: relative;
+}
+
+.header h3 {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+nav {
     display: flex;
-    padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
-nav img{
+
+nav img {
     flex: 1;
     text-align: left;
 }
-.nav-links{
+
+.nav-links {
     flex: 1;
     text-align: right;
 }
+
 /*----- join the waiting list button -----*/
-.hero-btn{
+.hero-btn {
     display: inline-block;
     text-decoration: none;
     color: #2e0c66;
     border: 3px solid #FFA500;
-    border-radius: 30px;
-    padding: 20px 20px;
-    font-size: 20px;
-    background: transparent;
-    position: pointer;
-    cursor: pointer;
-}
-/*----- Autostell button -----*/
-.btn{
-    width: 300px;
-    height: 70px;
-    flex-shrink: 0;
-    display: inline-block;
-    text-decoration: none;
-    color: #FFA500;
-    border-radius:  90px;
-    padding: 20px 20px;
-    font-size: 20px;
-    background: #001F3F;
-    position: pointer;
-    cursor: pointer;
-    text-align: center;
-}
-
-.introduction{
-    background: #d3d3d3;
-    color: #001F3F;
-    text-align: justify;
-font-feature-settings: 'case' on;
-font-family: Roboto;
-font-size: 20px;
-font-style: normal;
-font-weight: 300;
-line-height: 30px; /* 126.667% */
-text-transform: capitalize;
-padding: 30px;
-}
-.h1{
-    text-align: center;
-}
-
-                /*----- Simplified Car Transactions -----*/
-.about-us{
-    
-    width: 1519px;
-    height: 558px;
-    flex-shrink: 0;
-    border: 1px solid #000;
-    background: linear-gradient(90deg, #d3d3d3  48.11%, #001F3F 48.11%, #001F3F 81.08%);
-    
-}
-
-.about-col img{
-    width: 580px;
-    height: 510px;
-    position: absolute;
-    right: 124.117px;
-    top: 1100px;
-    
-    
-    
-
-}
-.about-col{
-    flex-basis: 48%;
-    padding: 30px 2px;
-}
-
-.about-col h1{
+    border-radius: 40px;
+    padding: 20px;
     color: #001F3F;
     font-family: Roboto;
     font-size: 32px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
-    position: absolute;
-    left: 126px;
-    top: 1100px;
-    
+    background: transparent;
+    cursor: pointer;
+    border-radius: 90px;
+    border: 2px solid #FFA500;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
 }
-.about-col p{
-    width: 499px;
-    position: absolute;
-    left: 126px;
-    top: 1200px;
-    color: #001F3F;
+
+/*----- Autostell button -----*/
+.btn {
+    width: 300px;
+    flex-shrink: 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFA500;
+    border-radius: 0 40px 40px 0;
+    padding: 20px;
+    background: #001F3F;
+    position: pointer;
+    cursor: pointer;
+    text-align: center;
+    margin-left: -40px;
+
+    color: #FFA500;
     font-family: Roboto;
     font-size: 30px;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    
-}
-.btn1 {
-    
-    position: absolute;
-    left: 126px;
-    top: 1500px;
-    width: 300px;
-    height: 70px;
-    flex-shrink: 0;
-    display: inline-block;
-    text-decoration: none;
-    color: #FFA500;
-    border-radius:  90px;
-    padding: 20px 20px;
-    font-size: 20px;
-    background: #001F3F;
-    position: pointer;
-    cursor: pointer;
-    text-align: center;
-
-}
-
-  /*----- Expert Automobile Services -----*/
-.about-1{ 
-    width: 1519px;
-    height: 558px;
-    flex-shrink: 0;
-    border: 1px solid #000;
-    background: linear-gradient(90deg, #001F3F 48.11%, #001F3F 48.08%, #A9A9A9 48.11% );
-  }
-
-.about-2 h1{
-    width: 468.75px;
-    position: absolute;
-    right: 211.133px;
-    top: 1800px;
-    color: #F5F5F5;
-    font-family: Montserrat;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
 }
 
-.about-2 p{
-    width: 535px;
-    position: absolute;
-    right: 190.133px;
-    top: 1900px;
-    color: #F5F5F5;
-    font-family: Roboto;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
-}
-.about-2 img{
-    position: absolute;
-left: 90.957px;
-top: 1710.541px;
-}
+/*----- Simplified Car Transactions -----*/
