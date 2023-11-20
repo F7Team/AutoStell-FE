@@ -25,11 +25,12 @@
 
 .header h3 {
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 0;
     right: 0;
     font-size: 48px;
     text-align: center;
+    color: #000080;
 }
 
 nav {
