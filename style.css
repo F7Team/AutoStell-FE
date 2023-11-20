@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 .container {
@@ -18,7 +17,7 @@
     background-color: #d3d3d3;
     background-image: url(images/car-back.png);
     background-position: center;
-    background-size: 50% 350px;
+    background-size: 50% 50%;
     background-repeat: no-repeat;
     padding: 40px;
     position: relative;
@@ -26,11 +25,10 @@
 
 .header h3 {
     position: absolute;
-    bottom: 0;
+    bottom: 15%;
     left: 0;
     right: 0;
-    margin-bottom: 50px;
-    font-size: 36px;
+    font-size: 48px;
     text-align: center;
 }
 
@@ -98,3 +96,19 @@ nav img {
 }
 
 /*----- Simplified Car Transactions -----*/
+
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 22px;
+        width: 200px;
+    }
+
+    .header {
+        background-size: 90% 350px;
+    }
+
+    .header h3{
+        font-size: 36px;
+    }
+}
