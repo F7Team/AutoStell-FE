@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    background-color: #d3d3d3;
+    background-image: url(images/car-back.png);
+    background-position: center;
+    background-size: 50% 350px;
+    background-repeat: no-repeat;
+    padding: 40px;
+    position: relative;
+}
+
+.header h3 {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+/*----- join the waiting list button -----*/
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #2e0c66;
+    border: 3px solid #FFA500;
+    border-radius: 40px;
+    padding: 20px;
+    color: #001F3F;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 90px;
+    border: 2px solid #FFA500;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+}
+
+/*----- Autostell button -----*/
+.btn {
+    width: 300px;
+    flex-shrink: 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFA500;
+    border-radius: 0 40px 40px 0;
+    padding: 20px;
+    background: #001F3F;
+    position: pointer;
+    cursor: pointer;
+    text-align: center;
+    margin-left: -40px;
+
+    color: #FFA500;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+/*----- Simplified Car Transactions -----*/
