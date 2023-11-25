@@ -1,115 +1,771 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+ /*----- Button location-----*/
+    
+  
 
-.container {
-    margin: 0 auto;
-    max-width: 1440px;
-}
+ /*----- Background Image -----*/
 
-.header {
-    width: 100%;
-    height: 100vh;
-    background-color: #d3d3d3;
-    background-image: url(images/car-back.png);
-    background-position: center;
-    background-size: 50% 50%;
-    background-repeat: no-repeat;
+ .header{
+    width: 790px;
+    height: 460px;
     padding: 40px;
-    position: relative;
-}
-
-.header h3 {
     position: absolute;
-    bottom: 10%;
-    left: 0;
-    right: 0;
-    font-size: 48px;
-    text-align: center;
-    color: #000080;
-}
+    left: 400.117px;
+    top: 200px;
+    background-image: url(images/car-back.png);
+    background-repeat: no-repeat;
+   
+ }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-nav img {
-    flex: 1;
-    text-align: left;
-}
 
-.nav-links {
-    flex: 1;
-    text-align: right;
-}
-
-/*----- join the waiting list button -----*/
-.hero-btn {
+/*----- join waitlist button -----*/
+.hero-btn{
+    position: absolute;
+    right: 70px;
+    top: 50px;
+    width: 300px;
+    height: 87.5px;
+    flex-shrink: 0;
     display: inline-block;
     text-decoration: none;
+    text-align: center;
     color: #2e0c66;
     border: 3px solid #FFA500;
-    border-radius: 40px;
-    padding: 20px;
-    color: #001F3F;
-    font-family: Roboto;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: capitalize;
-    background: transparent;
-    cursor: pointer;
     border-radius: 90px;
-    border: 2px solid #FFA500;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(15px);
+    padding: 20px 20px;
+    font-size: 30px;
+    background: transparent;
+    position: pointer;
+    cursor: pointer;
 }
 
 /*----- Autostell button -----*/
-.btn {
+.btn{
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 350px;
+    height: 100px;
+    flex-shrink: 0;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background: #001F3F;
+    position: pointer;
+    cursor: pointer;
+    padding: 30px ;
+    text-align: center;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 30px;
+    color: #FFA500;
+   
+}
+
+
+.about{
+    
+color: #001F3F;
+text-align: justify;
+font-feature-settings: 'case' on;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 126.667% */
+text-transform: capitalize;
+padding: 30px;
+}
+
+.introduction-col h1{
+    text-align: center;
+    font-weight: 300;
+}
+
+
+
+body{
+    background: #A9A9A9;
+}
+
+.introduction{
+color: #001F3F;
+text-align: justify;
+font-feature-settings: 'case' on;
+font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 200;
+line-height: 38px; /* 126.667% */
+text-transform: capitalize;
+padding: 100px;
+}
+                    /*----- Simplified Car Transactions section -----*/
+.about{
+    width: 1400px;
+    height: 558px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, #A9A9A9  48.11%, #001F3F 48.11%, #001F3F 81.08%);
+    position: relative;
+    left: 68.117px;
+}
+
+.about-col img{
+    width: 700px;
+    height: 530px;
+    position: absolute;
+    right: 1.117px;
+    top: 24px;
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+    
+}
+.about-col h1{
+    color: #001F3F;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    position: absolute;
+    left: 75px;
+    top: 45px;
+}
+
+.about-col p{
+    width: 499px;
+    position: absolute;
+    left: 75px;
+    top: 100px;
+    color: #001F3F;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: left;
+}
+
+.btn1{
+    position: absolute;
+    left: 70px;
+    top: 400px;
     width: 300px;
+    height: 70px;
     flex-shrink: 0;
     display: inline-block;
     text-decoration: none;
     color: #FFA500;
-    border-radius: 0 40px 40px 0;
-    padding: 20px;
+    border: 3px solid #FFA500;
+    border-radius:  90px;
+    padding: 20px 20px;
+    font-size: 20px;
     background: #001F3F;
     position: pointer;
     cursor: pointer;
     text-align: center;
-    margin-left: -40px;
+}
 
-    color: #FFA500;
+/*----- Expert Automobile Services -----*/
+.expert{
+    width: 1400px;
+    height: 558px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, #A9A9A9  48.11%, #001F3F 48.11%, #001F3F 81.08%);
+    position: relative;
+    left: 68.117px;
+}
+
+.expert-col h1{
+    color: #f5f5f5;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    position: absolute;
+    right: 209px;
+    top: 45px;
+    
+}
+
+.expert-col p{
+    width: 535px;
+   
+    position: absolute;
+    right: 130px;
+    top: 100px;
+    color: #f5f5f5;
     font-family: Roboto;
     font-size: 30px;
     font-style: normal;
+    font-weight: 50;
+    line-height: normal;
+}
+
+.btn2{
+    position: absolute;
+    right: 369px;
+    top: 400px;
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #001F3F;
+    border: 3px solid #FFA500;
+    border-radius:  90px;
+    padding: 20px 20px;
+    font-size: 20px;
+    background: #A9A9A9;
+    position: pointer;
+    cursor: pointer;
+    text-align: center;
+}
+
+.expert-col img{
+    width: 680px;
+    height: 550px;
+    position: absolute;
+    left: 8.117px;
+    top: 15px;
+}
+
+ /*----- Real-time Communication -----*/
+ .real{
+    width: 1400px;
+    height: 558px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, #A9A9A9  48.11%, #001F3F 48.11%, #001F3F 81.08%);
+    position: relative;
+    left: 68.117px;
+
+ }
+
+ .real-col img{
+    width: 700px;
+    height: 530px;
+    position: absolute;
+    right: 1.117px;
+    top: 24px;
+ }
+
+ .real-col h1{
+    color: #001F3F;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    position: absolute;
+    left: 80px;
+    top: 45px;
+ }
+
+ .real-col p{
+    width: 499px;
+    position: absolute;
+    left: 80px;
+    top: 100px;
+    color: #001F3F;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ }
+
+ .btn3{
+    position: absolute;
+    left: 80px;
+    top: 400px;
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFA500;
+    border: 3px solid #FFA500;
+    border-radius:  90px;
+    padding: 20px 20px;
+    font-size: 20px;
+    background: #001F3F;
+    position: pointer;
+    cursor: pointer;
+    text-align: center;
+
+ }
+  /*----- Comprehensive Service Director -----*/
+ .services{
+    width: 1400px;
+    height: 558px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, #A9A9A9  48.11%, #001F3F 48.11%, #001F3F 81.08%);
+    position: relative;
+    left: 68.117px;
+ }
+
+ .services-col img{
+    width: 680px;
+    height: 550px;
+    position: absolute;
+    left: 9.117px;
+    top: 15px;
+ }
+
+ .services-col h1{
+    color: #f5f5f5;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    position: absolute;
+    right: 110px;
+    top: 45px;
+ }
+
+ .services-col p{
+    width: 499px;
+    position: absolute;
+    right: 160px;
+    top: 100px;
+    color: #f5f5f5;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ }
+
+ .btn4{
+    position: absolute;
+    right: 360px;
+    top: 400px;
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #001F3F;
+    border: 3px solid #FFA500;
+    border-radius:  90px;
+    padding: 20px 20px;
+    font-size: 20px;
+    background: #A9A9A9;
+    position: pointer;
+    cursor: pointer;
+    text-align: center;
+ }
+
+ /*----- Explore Your Passion: Blog about Cars! -----*/
+ .explore{
+    width: 1400px;
+    height: 914.5px;
+    flex-shrink: 0;
+    background: #001F3F;
+    position: relative;
+    left: 68.117px;
+ }
+
+ .explore-col h1{
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+ }
+
+ .explore-col p{
+    width: 1000px;
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 59px; /* 132.5% */
+    text-transform: lowercase;
+    position: relative;
+    left: 200.117px;
+ }
+
+ .btn5{
+    position: absolute;
+    right: 280px;
+    top: 600px;
+    width: 812px;
+    height: 168px;
+    flex-shrink: 0;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #001F3F;
+    position: pointer;
+    cursor: pointer;
+    font-size: 55px;
+    padding: 30px ;
     font-weight: 500;
+    border: 2px solid #FFA500;
+    background: #001F3F;
+    color: #A9A9A9  
+ }
+
+/*----- Secure and Transparent Transactions -----*/
+
+.secure{
+    width: 1400px;
+    height: 558px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, #A9A9A9  48.11%, #001F3F 48.11%, #001F3F 81.08%);
+    position: relative;
+    left: 68.117px;
+}
+
+.secure-col img{
+    width: 700px;
+    height: 530px;
+    position: absolute;
+    right: 1.117px;
+    top: 24px;
+ }
+
+.secure-col h1{
+    color: #001F3F;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    position: absolute;
+    left: 50px;
+    top: 45px;
+}
+
+.secure-col p{
+    width: 600px;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    color: #001F3F;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn6{
+    position: absolute;
+    left: 50px;
+    top: 400px;
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFA500;
+    border: 3px solid #FFA500;
+    border-radius:  90px;
+    padding: 20px 20px;
+    font-size: 20px;
+    background: #001F3F;
+    position: pointer;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*----- Community Knowledge Sharing -----*/
+.community{
+    width: 1400px;
+    height: 558px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, #A9A9A9  48.11%, #001F3F 48.11%, #001F3F 81.08%);
+    position: relative;
+    left: 68.117px;
+}
+.community-col img{
+    width: 680px;
+    height: 550px;
+    position: absolute;
+    left: 9.117px;
+    top: 15px;
+}
+.community-col h1{
+    color: #f5f5f5;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    position: absolute;
+    right: 120px;
+    top: 45px;
+}
+.community-col p{
+    width: 499px;
+    position: absolute;
+    right: 150px;
+    top: 100px;
+    color: #f5f5f5;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.btn7{
+    position: absolute;
+    right: 350px;
+    top: 400px;
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #001F3F;
+    border: 3px solid #FFA500;
+    border-radius:  90px;
+    padding: 20px 20px;
+    font-size: 20px;
+    background: #A9A9A9;
+    position: pointer;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*----- User-Friendly Interface -----*/
+.user{
+    width: 1400px;
+    height: 558px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, #A9A9A9  48.11%, #001F3F 48.11%, #001F3F 81.08%);
+    position: relative;
+    left: 68.117px;
+}
+.user-col img{
+    width: 700px;
+    height: 530px;
+    position: absolute;
+    right: 1.117px;
+    top: 24px;
+}
+.user-col h1{
+    color: #001F3F;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    position: absolute;
+    left: 50px;
+    top: 45px;
+}
+.user-col p{
+    width: 600px;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    color: #001F3F;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.btn8{
+    position: absolute;
+    left: 50px;
+    top: 400px;
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFA500;
+    border: 3px solid #FFA500;
+    border-radius:  90px;
+    padding: 20px 20px;
+    font-size: 20px;
+    background: #001F3F;
+    position: pointer;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*----- Mobile Accessibility -----*/
+.mobile{
+    width: 1400px;
+    height: 558px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, #A9A9A9  48.11%, #001F3F 48.11%, #001F3F 81.08%);
+    position: relative;
+    left: 68.117px;
+}
+.mobile-col img{
+    width: 680px;
+    height: 550px;
+    position: absolute;
+    left: 9.117px;
+    top: 15px;
+}
+.mobile-col h1{
+    color: #f5f5f5;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    position: absolute;
+    right: 120px;
+    top: 45px;
+}
+.mobile-col p{
+    width: 499px;
+    position: absolute;
+    right: 150px;
+    top: 100px;
+    color: #f5f5f5;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.btn9{
+    position: absolute;
+    right: 350px;
+    top: 400px;
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #001F3F;
+    border: 3px solid #FFA500;
+    border-radius:  90px;
+    padding: 20px 20px;
+    font-size: 20px;
+    background: #A9A9A9;
+    position: pointer;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*----- car footer -----*/
+.footer{
+    width: 1400px;
+    height: 757.059px;
+    flex-shrink: 0;
+    position: relative;
+    left: 68.117px;
+    border: 1.773px solid #000;
+   
+    background: linear-gradient(108deg, #A9A9A9 47.76%, #001F3F 47.76%, #001F3F 104.24%);
+    box-shadow: 0px 17.72973px 26.5946px 0px rgba(0, 31, 63, 0.50), -17.72973px 0px 26.5946px 0px rgba(0, 31, 63, 0.50);
+}
+
+/*----- end -----*/
+.end{
+    width: 1517px;
+    height: 137px;
+    flex-shrink: 0;
+    border: 5px solid #A9A9A9;
+    background: #001F3F;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+}
+.end-col p{
+    color: #F5F5F5;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    position: absolute;
+    right: 40px;
+    top: 9240px;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.end-col h{
+    color: #F5F5F5;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    position: absolute;
+    left: 40px;
+    top: 9240px;
     line-height: normal;
     text-transform: capitalize;
 }
 
-/*----- Simplified Car Transactions -----*/
 
 
-@media (max-width: 768px) {
-    .btn {
-        font-size: 22px;
-        width: 200px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- For responsive mobile view -----*/
+
+ @media screen and (max-width: 600px)
+ {
+    h1{
+        font-size: 30px;
+        line-height: 38px; /* 126.667% */
     }
-
-    .header {
+  .header {
         background-size: 90% 350px;
     }
-
-    .header h3{
-        font-size: 36px;
-         bottom: 15%;
-    }
-}
+ }
